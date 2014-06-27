@@ -21,4 +21,4 @@ Add Questions:
 	- question_no|question|answer|0|max_score|
 	- If you want to display image in the question, replace '0' with any question number
 
-
+Set mindex.php as home page, when you are making some modifications to website.
