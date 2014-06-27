@@ -1,0 +1,254 @@
+@font-face {
+  font-family: 'Happy Monkey';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Happy Monkey'), local('HappyMonkey-Regular'), url('../fonts/HappyMonkey.woff') format('woff');
+}
+
+body, h1, h2, h3, h4 , p {
+    font-family:'Happy Monkey', cursive;
+    font-weight: 400;
+}
+
+body {
+	padding-top: 50px;
+}
+
+/* Page Sections */
+.section,
+.section-colored {
+  padding: 10px 0;
+}
+
+.section-colored {
+
+  background-image: url("bbg2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;         /* Generic*/
+/*
+  background-color: #a1a1f1; 
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(top, #f8f8f8 0%, #f1d1a1 100%); 
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#f1d1a1)); 
+  background-image: -webkit-linear-gradient(top, #f8f8f8 0%,#f1d1a1 100%); 
+  background-image: -o-linear-gradient(top, #f8f8f8 0%,#f1d1a1 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#f1d1a1',GradientType=0 ); 
+  background-image: linear-gradient(top, #f8f8f8 0%,#f1d1a1 100%); 
+
+
+background-image: url("../images/bg.jpg");
+
+background: rgb(249,198,103); 
+background: -moz-linear-gradient(top, rgba(249,198,103,1) 17%, rgba(228,234,119,1) 68%); 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(17%,rgba(249,198,103,1)), color-stop(68%,rgba(228,234,119,1)));
+background: -webkit-linear-gradient(top, rgba(249,198,103,1) 17%,rgba(228,234,119,1) 68%); 
+background: -o-linear-gradient(top, rgba(249,198,103,1) 17%,rgba(228,234,119,1) 68%); 
+background: -ms-linear-gradient(top, rgba(249,198,103,1) 17%,rgba(228,234,119,1) 68%); 
+background: linear-gradient(to bottom, rgba(249,198,103,1) 17%,rgba(228,234,119,1) 68%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', endColorstr='#e4ea77',GradientType=0 );
+
+background: #feffe8; 
+background: -moz-linear-gradient(top, #feffe8 0%, #d6dbbf 100%); 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feffe8), color-stop(100%,#d6dbbf));
+background: -webkit-linear-gradient(top, #feffe8 0%,#d6dbbf 100%); 
+background: -o-linear-gradient(top, #feffe8 0%,#d6dbbf 100%);
+background: -ms-linear-gradient(top, #feffe8 0%,#d6dbbf 100%); 
+background: linear-gradient(to bottom, #feffe8 0%,#d6dbbf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffe8', endColorstr='#d6dbbf',GradientType=0 ); 
+
+
+
+background-image: -webkit-gradient(
+  linear, left top, left bottom, from(rgba(50,50,50,0.8)),
+  to(rgba(80,80,80,0.2)), color-stop(.5,#333333)
+);*/
+
+}
+/* Customize the nav-justified links to be fill the entire space of the .navbar */
+
+.nav-justified {
+  background-color: #eee;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.nav-justified > li > a {
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #777;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #d5d5d5;
+  background-color: #e5e5e5; /* Old browsers */
+  background-repeat: repeat-x; /* Repeat the gradient */
+  background-image: -moz-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%); /* FF3.6+ */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+  background-image: -webkit-linear-gradient(top, #f5f5f5 0%,#e5e5e5 100%); /* Chrome 10+,Safari 5.1+ */
+  background-image: -o-linear-gradient(top, #f5f5f5 0%,#e5e5e5 100%); /* Opera 11.10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+  background-image: linear-gradient(top, #f5f5f5 0%,#e5e5e5 100%); /* W3C */
+}
+.nav-justified > .active > a,
+.nav-justified > .active > a:hover,
+.nav-justified > .active > a:focus {
+  background-color: #ddd;
+  background-image: none;
+  box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
+}
+.nav-justified > li:first-child > a {
+  border-radius: 5px 5px 0 0;
+}
+.nav-justified > li:last-child > a {
+  border-bottom: 0;
+  border-radius: 0 0 5px 5px;
+}
+
+@media (min-width: 768px) {
+  .nav-justified {
+	max-height: 52px;
+  }
+  .nav-justified > li > a {
+	border-left: 1px solid #fff;
+	border-right: 1px solid #d5d5d5;
+  }
+  .nav-justified > li:first-child > a {
+	border-left: 0;
+	border-radius: 5px 0 0 5px;
+  }
+  .nav-justified > li:last-child > a {
+	border-radius: 0 5px 5px 0;
+	border-right: 0;
+  }
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 310px;
+  margin-bottom: 15px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 310px;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 310px;
+}
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+
+
+.sidebar {
+  margin-top: 40px;
+}
+
+.sidebar ul {
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #cccccc;
+}
+#map-canvas {
+  width:100%;
+  height:100%;
+}
+
+#contact
+{
+	z-index: 300;
+}
+.done
+{
+	display: none;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+.contact-form
+{
+	margin-top: 20px;
+	position: relative;
+	z-index: 300;
+}
+.contact-form p
+{
+	margin-bottom: 2px;
+	text-transform: uppercase;
+}
+.contact-form input
+{
+	height: 28px;
+	margin-bottom: 10px;
+	padding-left: 4px;
+	width: 98%;
+}
+.contact-form textarea
+{
+	height: 125px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	width: 98%;
+}
+.contact-form input.submit
+{
+	cursor: pointer;
+	display: inline-block;
+	height: 24px;
+	line-height: 0;
+	margin-bottom: 20px;
+	padding: 3px 4px 0 4px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 60px;
+}
+.contact-form input.submit:hover
+{
+	border: 0;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
