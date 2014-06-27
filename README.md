@@ -27,7 +27,7 @@ Add Questions:
 	- question_no|question|answer|0|max_score|
 	- If you want to display image in the question, replace '0' with any question number
 
-
+mindex.php is the one I used to set as home page, when I'm making some changes to game.
 
 ----------------------------------------------------
 <a href="http://thechaithanya.blogspot.com/">Techniful</a><br>
