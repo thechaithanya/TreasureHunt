@@ -32,6 +32,16 @@ if($question == '') {
 else {
 if($action == "edit")
 {
+	
+//implemented a file to log all entered answers.
+
+  $filename = "log.txt";
+  $f_data=$avatarid.','.$answer.'	';
+  $filelol = fopen($filename, "a");
+  fwrite($filelol,$f_data);
+  fclose($filelol);
+
+//end
   if(strtolower($answer) != strtolower($solution)){ header("location: $PHP_SELF?id=modules/game&no_match_ans=1"); exit; }
   $inc = 1;
   $dec = 50;

@@ -267,6 +267,8 @@ echo'
 								<li class="list-group-item"><a href="'.$PHP_SELF.'?id=modules/leaderA&action=view_leader">Leadership</li>
 								<li class="list-group-item"><a href="'.$PHP_SELF.'?id=modules/users">Users list</a></li>
 								<li class="list-group-item"><a href="'.$PHP_SELF.'?action=logout">Logout</a></li>
+								<li class="list-group-item" style="font-size: 17px;"><a href="'.$PHP_SELF.'?id=modules/addq">Add Question</a></li>
+								<li class="list-group-item" style="font-size: 17px;"><a href="'.$PHP_SELF.'?id=modules/addi">Add Image</a></li>
 							</ul>';
 						    }
 			echo'
