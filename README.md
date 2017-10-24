@@ -29,6 +29,10 @@ Add Questions:
 
 mindex.php is the one I used to set as home page, when I'm making some changes to game.
 
+Use
+sudo a2dismod autoindex
+to disable directory browsing on your server.
+
 ----------------------------------------------------
 <a href="http://thechaithanya.blogspot.com/">Techniful</a><br>
 Follow, if you like:
